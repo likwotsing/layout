@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>圣杯布局</title>
+  <style>
+    .wrap {
+      padding: 0 150px 0 200px;
+      overflow: hidden;
+    }
+
+    .left {
+      float: left;
+      width: 200px;
+      margin-left: -100%;
+      position: relative;
+      left: -200px;
+      background-color: #6AC5AC;
+    }
+
+    .center {
+      float: left;
+      width: 100%;
+      background-color: #FCC777;
+    }
+
+    .right {
+      float: left;
+      width: 150px;
+      margin-left: -150px;
+      position: relative;
+      right: -150px;
+      background-color: #D66666;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="center">
+      center
+    </div>
+    <div class="left">
+      left, Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vitae unde sequi ratione perferendis itaque,
+      maxime aliquid recusandae deleniti quasi assumenda reprehenderit omnis deserunt iusto id. Nostrum excepturi
+      minima illum.
+    </div>
+    <div class="right">
+      right, Lorem ipsum, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus doloremque ipsum,
+      obcaecati repudiandae est sint itaque laboriosam placeat molestiae consequuntur quae possimus voluptate atque
+      minus rem reprehenderit dicta commodi iste.
+    </div>
+  </div>
+  <script>
+    /*
+      圣杯布局
+
+      特点：借助的是其他非主要元素覆盖了其父元素的padding值所占据的宽度，同一个杯子，非主要元素其只是占据了全部容器的padding值部分；
+
+      缺点：当中间center的width小于左侧的padding（和.left的宽度一致）时，布局会混乱
+      
+      原因：.left的margin-left是相对于父元素.warp的宽度（不包括padding值，也就是.center宽度）的-100%，当.center的宽度小于.left的宽度时，左侧放不下.left了，所以.left需要移到下一行(或者margin-left: -110%或更多)
+    */
+  </script>
+</body>
+
+</html>

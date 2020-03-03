@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>grid布局</title>
+  <style>
+    .wrap {
+      display: grid;
+      grid-template-columns: 150px auto 300px;
+      grid-template-rows: 150px;
+    }
+
+    .left {
+      background-color: #6AC5AC;
+    }
+
+    .center {
+      background-color: #FCC777;
+    }
+
+    .right {
+      background-color: #D66666;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <div class="left">
+      left, Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, neque voluptatum eaque at inventore illo impedit itaque commodi, quas sed reprehenderit excepturi labore consequatur modi laborum, sit aspernatur nihil architecto.
+    </div>
+    <div class="center">
+      center
+    </div>
+    <div class="right">
+      right, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    </div>
+  </div>
+  
+</body>
+</html>

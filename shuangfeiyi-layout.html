@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>双飞翼布局</title>
+  <style>
+    body {
+      text-align: justify;
+      word-wrap: break-word;
+      word-break: break-all;
+    }
+    .wrap {
+      background-color: #ccc;
+    }
+
+    .left {
+      float: left;
+      width: 250px;
+      margin-left: -100%;
+      background-color: #6AC5AC;
+    }
+    
+    .center {
+      float: left;
+      width: 100%;
+      background-color: #FCC777;
+    }
+
+    .main {
+      /* 这是圣杯布局和双飞翼布局的最大区别 */
+      margin: 0 100px 0 250px;
+      background-color: #D66666;
+    }
+
+    .right {
+      float: left;
+      width: 100px;
+      margin-left: -100px;
+      background-color: #F0F0C0;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="center">
+      <div class="main">
+        main
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, odio, ducimus iste ullam quo, exercitationem magni ipsum reiciendis soluta deserunt iusto? Vel debitis doloremque sunt consequuntur perferendis voluptatum cupiditate soluta.
+      </div>
+    </div>
+    <div class="left">
+      left, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus molestiae in laudantium aliquid rem repellat corporis quisquam neque doloribus, alias similique blanditiis maxime tenetur explicabo nostrum dolorum consectetur consequuntur accusantium!
+    </div>
+    <div class="right">
+      right, loremlasdifoasdfasdfoasdijfasd
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum earum minus praesentium aut. At fugiat esse tenetur! Porro cum dicta, autem quasi quod quia in quaerat voluptatem? Nihil, officiis quas.
+    </div>
+  </div>
+</body>
+</html>
